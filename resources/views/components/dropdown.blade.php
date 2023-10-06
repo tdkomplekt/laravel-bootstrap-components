@@ -4,6 +4,7 @@
     'items' => null,
     'color' => 'primary',
     'size' => null,
+    'icon_toggle' => null,
     'dropdown_class' => null,
     'dropdown_menu_class' => null,
 ])
@@ -12,7 +13,7 @@
     $attributes = $attributes->class([
         'btn btn-' . $color,
         'btn-' . $size => $size,
-        'dropdown-toggle',
+        'dropdown-toggle' => $icon_toggle,
         'border-0 p-0' => $color == 'link'
     ])->merge([
         'type' => 'button',

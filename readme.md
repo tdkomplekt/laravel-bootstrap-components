@@ -299,6 +299,9 @@ composer require tdkomplekt/laravel-bootstrap-components
 - `items`: выпадающие элементы, также можно поместить в `slot`
 - `color`: цвет `primary`, `danger`, `success`
 - `size`: размер `sm`, `lg`
+- `dropdown_class`: классы для родительского dropdown
+- `dropdown_menu_class`: классы для меню dropdown
+- `icon_toggle`: показывать стрелочку
 ---
 
 ### Dropdown Item
