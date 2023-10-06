@@ -6,6 +6,8 @@
     'model' => null,
     'debounce' => false,
     'lazy' => false,
+    'prepend' => null,
+    'append' => null,
 ])
 
 @php
