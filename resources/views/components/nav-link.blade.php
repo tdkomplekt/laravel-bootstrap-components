@@ -1,10 +1,9 @@
 @props([
     'icon' => null,
     'label' => null,
-    'color' => null,
     'route' => null,
     'url' => null,
-    'href' => '#',
+    'href' => null,
     'click' => null,
 ])
 
@@ -13,7 +12,8 @@
     else if ($url) $href = url($url);
 
     $attributes = $attributes->class([
-        'text-' . $color => $color,
+        'nav-link',
+        'active' => $href == Request::url(),
     ])->merge([
         'href' => $href,
         'wire:click.prevent' => $click,

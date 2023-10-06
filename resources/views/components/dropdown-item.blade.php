@@ -1,12 +1,10 @@
 @props([
     'icon' => null,
     'label' => null,
-    'color' => null,
     'route' => null,
     'url' => null,
-    'href' => '#',
+    'href' => null,
     'click' => null,
-    'stretched' => null,
 ])
 
 @php
@@ -14,16 +12,17 @@
     else if ($url) $href = url($url);
 
     $attributes = $attributes->class([
-        'link-' . $color => $color,
-        'stretched-link' => $stretched,
+        'dropdown-item',
+        'active' => $href == Request::url(),
     ])->merge([
+        'type' => !$href ? 'button' : null,
         'href' => $href,
-        'wire:click.prevent' => $click,
+        'wire:click' => $click,
     ]);
 @endphp
 
-<a {{ $attributes }}>
+<{{ $href ? 'a' : 'button' }} {{ $attributes }}>
     <x-bs::icon :name="$icon"/>
 
     {{ $label ?? $slot }}
-</a>
+</{{ $href ? 'a' : 'button' }}>
