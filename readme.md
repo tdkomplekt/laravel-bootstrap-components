@@ -53,7 +53,7 @@ composer require tdkomplekt/laravel-bootstrap-components
 ```html
 <!-- Logo -->
 <x-bs::link url="{{ url('/') }}" class="logo">
-    <x-bs::image
+    <x-bs::img
         asset="{{ asset('assets/images/logo.png') }}"
         width="37" height="37"
         class="logo__image"
