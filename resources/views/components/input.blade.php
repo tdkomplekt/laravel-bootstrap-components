@@ -25,7 +25,6 @@
     $attributes = $attributes->class([
         'form-control',
         'form-control-' . $size => $size,
-        'rounded-end' => !$append,
         'is-invalid' => $errors->has($key),
     ])->merge([
         'type' => $type,
