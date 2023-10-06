@@ -2,7 +2,7 @@
     'submit' => null,
     'route' => null,
     'url' => null,
-    'href' => '#',
+    'href' => null,
 ])
 
 @php
@@ -12,7 +12,7 @@
     $attributes = $attributes->class([
         //
     ])->merge([
-        'href' => $href,
+        'action' => $href,
         'wire:submit.prevent' => $submit
     ]);
 @endphp
