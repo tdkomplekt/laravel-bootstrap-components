@@ -25,7 +25,7 @@
         'form-select',
         'form-select-' . $size => $size,
         'rounded-end' => !$append,
-        'is-invalid' => $errors->has($key),
+        'is-invalid' => (isset($errors) ? $errors->has($key) : ''),
     ])->merge([
         'id' => $id,
         'wire:model.' . $bind => $model ? $prefix . $model : null,

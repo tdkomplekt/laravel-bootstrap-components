@@ -19,7 +19,7 @@
 
     $attributes = $attributes->class([
         'form-check-input',
-        'is-invalid' => $errors->has($key),
+        'is-invalid' => (isset($errors) ? $errors->has($key) : ''),
     ])->merge([
         'type' => 'radio',
         'name' => $key,

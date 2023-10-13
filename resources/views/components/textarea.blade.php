@@ -25,7 +25,7 @@
         'form-control',
         'form-control-' . $size => $size,
         'rounded-end' => !$append,
-        'is-invalid' => $errors->has($key),
+        'is-invalid' => (isset($errors) ? $errors->has($key) : ''),
     ])->merge([
         'id' => $id,
         'rows' => $rows,

@@ -22,7 +22,7 @@
         'form-control form-control-color',
         'form-control-' . $size => $size,
         'rounded-end' => !$append,
-        'is-invalid' => $errors->has($key),
+        'is-invalid' => (isset($errors) ? $errors->has($key) : ''),
     ])->merge([
         'type' => 'color',
         'id' => $id,
