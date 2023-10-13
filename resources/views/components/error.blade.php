@@ -10,8 +10,10 @@
     ]);
 @endphp
 
-@error($key)
-    <div {{ $attributes }}>
-        {{ $message }}
-    </div>
-@enderror
+@isset($errors)
+    @error($key)
+        <div {{ $attributes }}>
+            {{ $message }}
+        </div>
+    @enderror
+@endisset
