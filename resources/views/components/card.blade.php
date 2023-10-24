@@ -18,7 +18,7 @@
 <div {{ $attributes }}>
 
     @if($image)
-        <x-bs::img asset="{{ $image }}" class="card-img-top">
+        <x-bs::img asset="{{ $image }}" class="card-img-top" />
     @endif
 
     <div class="card-body">
@@ -31,8 +31,4 @@
 
         {{ $label ?? $slot }}
     </div>
-
-    @if($dismissible)
-        <x-bs::close dismiss="alert"/>
-    @endif
 </div>
