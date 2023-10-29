@@ -17,7 +17,7 @@
 <div {{ $attributes }} role="alert">
     <x-bs::icon :name="$icon"/>
 
-    {{ $label ?? $slot }}
+    {!! $label ?? $slot !!}
 
     @if($dismissible)
         <x-bs::close dismiss="alert"/>

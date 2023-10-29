@@ -9,6 +9,7 @@
     'model' => null,
     'debounce' => false,
     'lazy' => false,
+    'value' => null,
 ])
 
 @php
@@ -39,7 +40,7 @@
     <div class="input-group">
         <x-bs::input-addon :icon="$icon" :label="$prepend"/>
 
-        <textarea {{ $attributes }}></textarea>
+        <textarea {{ $attributes }}>{{ $value }}</textarea>
 
         <x-bs::input-addon :label="$append" class="rounded-end"/>
 
