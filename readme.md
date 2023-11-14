@@ -26,6 +26,7 @@
     - [Input](#Input)
     - [Input-addon](#Input-addon)
     - [Input-group](#Input-group)
+    - [Input-floating](#Input-floating)
     - [Link](#Link)
     - [Nav-dropdown](#Nav-dropdown)
     - [Nav-link](#Nav-link)
@@ -418,6 +419,32 @@ Font Awesome иконка:
 - `prepend`: аддон для отображения перед вводом, можно использовать через именованный слот
 - `append`: аддон для отображения после ввода, можно использовать через именованный слот
 - `size`: размер `sm`, `lg`
+- `help`: вспомогательная метка для отображения под вводом
+- `model`: Livewire model key
+- `debounce`: время в мс для привязки данных Livewire к клавиатуре, например. `500`
+- `lazy`: привязать данные Livewire при изменении
+---
+
+### Input-floating
+
+Поле ввода:
+
+```html
+<x-bs::input-floating
+    :label="__('Email Address')"
+    type="email"
+    name="email"
+    model="login_email"
+    class="mb-1"
+    value="{{ old('email') }}"
+    required="required"
+/>
+```
+
+#### Доступные аттрибуты и слоты
+
+- `label`: метка для отображения над вводом
+- `type`: тип поля `text`, `email`
 - `help`: вспомогательная метка для отображения под вводом
 - `model`: Livewire model key
 - `debounce`: время в мс для привязки данных Livewire к клавиатуре, например. `500`
