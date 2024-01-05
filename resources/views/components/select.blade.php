@@ -9,6 +9,7 @@
     'help' => null,
     'model' => null,
     'lazy' => false,
+    'checked_value' => null,
 ])
 
 @php
@@ -42,7 +43,8 @@
             <option value="">{{ $placeholder }}</option>
 
             @foreach($options as $optionValue => $optionLabel)
-                <option value="{{ $optionValue }}">{{ $optionLabel }}</option>
+                <option value="{{ $optionValue }}"
+                    @if($optionValue == $checked_value) selected @endif>{{ $optionLabel }}</option>
             @endforeach
         </select>
 

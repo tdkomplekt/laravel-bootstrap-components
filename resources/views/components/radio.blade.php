@@ -5,6 +5,7 @@
     'switch' => false,
     'model' => null,
     'lazy' => false,
+    'checked_value' => null,
 ])
 
 @php
@@ -34,7 +35,8 @@
         <div class="form-check {{ $switch ? 'form-switch' : '' }}">
             @php($optionId = $id . '_' . $loop->index)
 
-            <input {{ $attributes->merge(['id' => $optionId, 'value' => $optionValue]) }}>
+            <input id="{{ $optionId }}" {{ $attributes->merge(['value' => $optionValue]) }}
+                @if($optionValue == $checked_value) checked @endif>
 
             <x-bs::check-label :for="$optionId" :label="$optionLabel"/>
 
