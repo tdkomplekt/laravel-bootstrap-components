@@ -5,6 +5,10 @@
     'model' => null,
     'debounce' => false,
     'lazy' => false,
+
+    'helper_title' => null,
+    'helper_icon' => null,
+    'helper_placement' => null,
 ])
 
 @php
@@ -38,7 +42,11 @@
 
         <input {{ $attributes }}>
 
-        <x-bs::label :for="$id" :label="$label"/>
+        <x-bs::label :for="$id" :label="$label"
+                     :helper_title="$helper_title"
+                     :helper_icon="$helper_icon"
+                     :helper_placement="$helper_placement"
+        />
 
         <x-bs::error :key="$key"/>
     </div>

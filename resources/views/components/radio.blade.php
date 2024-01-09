@@ -6,6 +6,10 @@
     'model' => null,
     'lazy' => false,
     'checked_value' => null,
+
+    'helper_title' => null,
+    'helper_icon' => null,
+    'helper_placement' => null,
 ])
 
 @php
@@ -29,7 +33,11 @@
 @endphp
 
 <div>
-    <x-bs::label :label="$label"/>
+    <x-bs::label :label="$label"
+                 :helper_title="$helper_title"
+                 :helper_icon="$helper_icon"
+                 :helper_placement="$helper_placement"
+    />
 
     @foreach($options as $optionValue => $optionLabel)
         <div class="form-check {{ $switch ? 'form-switch' : '' }}">

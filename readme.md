@@ -183,6 +183,9 @@ composer require tdkomplekt/laravel-bootstrap-components
 - `switch`: оформить как переключатель
 - `model`: Livewire model key
 - `lazy`: привязать данные Livewire при изменении
+- `helper_title`: добавить иконку помощника (tooltip при наведении)
+- `helper_icon`: иконка помощника
+- `helper_placement`: направление tooltip
 ---
 
 ### Close
@@ -225,6 +228,9 @@ composer require tdkomplekt/laravel-bootstrap-components
 - `help`: вспомогательная метка для отображения под вводом
 - `model`: Livewire model key
 - `lazy`: привязать данные Livewire при изменении
+- `helper_title`: добавить иконку помощника (tooltip при наведении)
+- `helper_icon`: иконка помощника
+- `helper_placement`: направление tooltip
 ---
 
 ### Datalist
@@ -254,6 +260,9 @@ composer require tdkomplekt/laravel-bootstrap-components
 - `model`: Livewire model key
 - `debounce`: время в мс для привязки данных Livewire к клавиатуре, например. `500`
 - `lazy`: привязать данные Livewire при изменении
+- `helper_title`: добавить иконку помощника (tooltip при наведении)
+- `helper_icon`: иконка помощника
+- `helper_placement`: направление tooltip
 ---
 
 ### Desc
@@ -423,6 +432,9 @@ Font Awesome иконка:
 - `model`: Livewire model key
 - `debounce`: время в мс для привязки данных Livewire к клавиатуре, например. `500`
 - `lazy`: привязать данные Livewire при изменении
+- `helper_title`: добавить иконку помощника (tooltip при наведении)
+- `helper_icon`: иконка помощника
+- `helper_placement`: направление tooltip
 ---
 
 ### Input-floating
@@ -449,6 +461,9 @@ Font Awesome иконка:
 - `model`: Livewire model key
 - `debounce`: время в мс для привязки данных Livewire к клавиатуре, например. `500`
 - `lazy`: привязать данные Livewire при изменении
+- `helper_title`: добавить иконку помощника (tooltip при наведении)
+- `helper_icon`: иконка помощника
+- `helper_placement`: направление tooltip
 ---
 
 ### Link
@@ -581,6 +596,9 @@ Font Awesome иконка:
 - `switch`: устанавливает ввод для использования стиля переключения
 - `model`: Livewire model key
 - `lazy`: привязать данные Livewire при изменении
+- `helper_title`: добавить иконку помощника (tooltip при наведении)
+- `helper_icon`: иконка помощника
+- `helper_placement`: направление tooltip
 ---
 
 ### Select
@@ -611,6 +629,9 @@ Font Awesome иконка:
 - `help`: вспомогательная метка для отображения под вводом
 - `model`: Livewire model key
 - `lazy`: привязать данные Livewire при изменении
+- `helper_title`: добавить иконку помощника (tooltip при наведении)
+- `helper_icon`: иконка помощника
+- `helper_placement`: направление tooltip
 ---
 
 ### Spinner
@@ -655,6 +676,9 @@ Font Awesome иконка:
 - `model`: Livewire model key
 - `lazy`: привязать данные Livewire при изменении
 - `debounce`: время в мс для привязки данных Livewire к клавиатуре, например. `500`
+- `helper_title`: добавить иконку помощника (tooltip при наведении)
+- `helper_icon`: иконка помощника
+- `helper_placement`: направление tooltip
 ---
 
 ## Пользовательские изменения

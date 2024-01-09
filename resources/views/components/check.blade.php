@@ -5,6 +5,10 @@
     'switch' => false,
     'model' => null,
     'lazy' => false,
+
+    'helper_title' => null,
+    'helper_icon' => null,
+    'helper_placement' => null,
 ])
 
 @php
@@ -27,7 +31,11 @@
 @endphp
 
 <div>
-    <x-bs::label :label="$label"/>
+    <x-bs::label :label="$label"
+                 :helper_title="$helper_title"
+                 :helper_icon="$helper_icon"
+                 :helper_placement="$helper_placement"
+    />
 
     <div class="form-check {{ $switch ? 'form-switch' : '' }}">
         <input {{ $attributes }}>
