@@ -5,6 +5,7 @@
     'switch' => false,
     'model' => null,
     'lazy' => false,
+    'is_checked' => false,
 
     'helper_title' => null,
     'helper_icon' => null,
@@ -38,7 +39,7 @@
     />
 
     <div class="form-check {{ $switch ? 'form-switch' : '' }}">
-        <input {{ $attributes }}>
+        <input {{ $attributes }} {{ $is_checked ? 'checked="checked"' : '' }}>
 
         <x-bs::check-label :for="$id" :label="$checkLabel"/>
 

@@ -170,6 +170,7 @@ composer require tdkomplekt/laravel-bootstrap-components
     :label="__('Agree')"
     :checkLabel="__('I agree to the TOS')"
     :help="__('Please accept the TOS.')"
+    :is_checked="$data->is_show"
     switch
     model="agree"
 />
@@ -180,6 +181,7 @@ composer require tdkomplekt/laravel-bootstrap-components
 - `label`: метка для отображения над вводом
 - `checkLabel`: метка для отображения рядом с вводом
 - `help`: вспомогательная метка для отображения под вводом
+- `is_checked`: устанавливает статус переключателя
 - `switch`: оформить как переключатель
 - `model`: Livewire model key
 - `lazy`: привязать данные Livewire при изменении
