@@ -30,4 +30,13 @@ return [
 
     'use_with_model_trait' => true,
 
+    /*
+    |--------------------------------------------------------------------------
+    | Public Path SVG Images
+    |--------------------------------------------------------------------------
+    |
+    */
+
+    'svg_icons_public_path' => public_path('assets/images/icons/')
+
 ];

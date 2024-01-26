@@ -35,6 +35,7 @@
     - [Radio](#Radio)
     - [Select](#Select)
     - [Spinner](#Spinner)
+    - [SVG](#Svg)
     - [Textarea](#Textarea)
 
 ## Требования
@@ -652,6 +653,23 @@ Font Awesome иконка:
 - `color`: Bootstrap цвет `primary`, `danger`, `success`
 - `text`: текст
 - `size`: размер `sm`, `lg`
+---
+
+### SVG
+
+Импорт SVG изображений (в код):
+
+```html
+<x-bs::svg 
+    icon="remainder"
+    path="cart/product"
+/>
+```
+
+#### Доступные аттрибуты и слоты
+
+- `icon`: название картинки/файла, которое находится по пути config('laravel-bootstrap-components.svg_icons_public_path')
+- `path`: дополнительный путь к файлу (относительно пути в конфиге)
 ---
 
 ### Textarea
