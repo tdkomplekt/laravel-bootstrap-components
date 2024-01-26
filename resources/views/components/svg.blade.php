@@ -18,5 +18,7 @@
 @endphp
 
 <i {{ $attributes }}>
-    {!! file_get_contents($fullpath) !!}
+    @if(File::exists($fullpath))
+        {!! file_get_contents($fullpath) !!}
+    @endif
 </i>
