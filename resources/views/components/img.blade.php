@@ -16,9 +16,9 @@
         'img-fluid' => $fluid,
         'img-thumbnail' => $thumbnail,
         'rounded' => $rounded,
-        'alt' => $alt,
     ])->merge([
         'src' => $src,
+        'alt' => $alt,
     ]);
 @endphp
 
