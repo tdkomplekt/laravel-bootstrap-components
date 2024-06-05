@@ -41,7 +41,11 @@
     <div class="form-check {{ $switch ? 'form-switch' : '' }}">
         <input {{ $attributes }} {{ $is_checked ? 'checked="checked"' : '' }}>
 
-        <x-bs::check-label :for="$id" :label="$checkLabel"/>
+        <x-bs::check-label :for="$id" :label="$checkLabel"
+                           :helper_title="$helper_title"
+                           :helper_icon="$helper_icon"
+                           :helper_placement="$helper_placement"
+        />
 
         <x-bs::error :key="$key"/>
 
