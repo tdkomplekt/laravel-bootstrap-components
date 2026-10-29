@@ -40,7 +40,7 @@
 
 ## Требования
 - php 8
-- Laravel 10
+- Laravel 10, 11, 12 или 13
 - Сначала необходимо установить Bootstrap 5 через [веб-пакет laravel/ui](https://github.com/laravel/ui)
 - Для использования значков должен быть установлен [Font Awesome v6](https://fontawesome.com/start) или ниже.
 
